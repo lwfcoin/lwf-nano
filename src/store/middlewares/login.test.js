@@ -1,4 +1,4 @@
-import Lisk from 'oxy-nano-js';
+import Lisk from 'lwf-nano-js';
 import { expect } from 'chai';
 import { spy, stub } from 'sinon';
 import middleware from './login';

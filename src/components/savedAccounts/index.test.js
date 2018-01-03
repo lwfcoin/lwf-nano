@@ -14,7 +14,7 @@ describe('SavedAccountsHOC', () => {
   const account = {
     isDelegate: false,
     publicKey: 'sample_key',
-    username: 'oxy-nano',
+    username: 'lwf-nano',
   };
   const options = {
     address: 'http://localhost:10000',

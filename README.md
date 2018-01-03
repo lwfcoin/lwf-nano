@@ -1,10 +1,10 @@
-# Oxy-Nano
+# LWF-Nano
 
 ## Development
 
 ```
-git clone https://github.com/oxycoin/oxy-nano.git
-cd oxy-nano
+git clone https://github.com/lwfcoin/lwf-nano.git
+cd lwf-nano
 npm install
 npm run dev
 ```
@@ -87,6 +87,7 @@ npm run pack
 
 ## License
 
+Copyright © 2017-2018 LWF
 Copyright © 2017-2018 Oxycoin
 Copyright © 2016-2017 Lisk Foundation
 
@@ -94,7 +95,7 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the [GNU General Public License](https://github.com/oxycoin/oxy-nano/tree/master/LICENSE) along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the [GNU General Public License](https://github.com/lwfcoin/lwf-nano/tree/master/LICENSE) along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ***
 

@@ -23,8 +23,8 @@ describe('AuthenticateHOC', () => {
 
   const account = {
     isDelegate: false,
-    address: '16313739661670634666X',
-    username: 'oxy-nano',
+    address: '16313739661670634666LWF',
+    username: 'lwf-nano',
   };
 
   const store = configureMockStore([])({

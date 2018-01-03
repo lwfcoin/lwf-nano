@@ -14,26 +14,26 @@ import * as delegateApi from '../../utils/api/delegate';
 const normalAccount = {
   passphrase: 'pass',
   isDelegate: false,
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
 };
 
 const delegateAccount = {
   passphrase: 'pass',
   isDelegate: true,
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
   delegate: {
-    username: 'oxy-nano',
+    username: 'lwf-nano',
   },
 };
 
 const withSecondSecretAccount = {
   passphrase: 'pass',
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
   delegate: {
-    username: 'oxy-nano',
+    username: 'lwf-nano',
   },
   secondSignature: 1,
 };

@@ -44,14 +44,14 @@ class EncryptMessage extends React.Component {
     }
     if (cryptoResult) {
       const result = [
-        '-----BEGIN OXY ENCRYPTED MESSAGE-----',
+        '-----BEGIN LWF ENCRYPTED MESSAGE-----',
         '-----SENDER PUBLIC KEY-----',
         this.props.account.publicKey,
         '-----ENCRYPTED MESSAGE-----',
         cryptoResult.encryptedMessage,
         '-----NONCE-----',
         cryptoResult.nonce,
-        '-----END OXY ENCRYPTED MESSAGE-----',
+        '-----END LWF ENCRYPTED MESSAGE-----',
       ].join('\n');
       this.setState({ result });
       this.showResult(result);

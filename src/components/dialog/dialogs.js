@@ -38,7 +38,7 @@ export default () => ({
     component: VoteDialog,
   },
   receive: {
-    title: i18next.t('Receive OXY'),
+    title: i18next.t('Receive LWF'),
     component: ReceiveDialog,
   },
   register: {

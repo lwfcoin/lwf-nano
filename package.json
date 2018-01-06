@@ -147,7 +147,7 @@
   },
   "build": {
     "appId": "io.lwfcoin.nano",
-    "productName": "Lwfcoin Nano",
+    "productName": "LWF Nano",
     "protocols": {
       "name": "lwf-nano",
       "schemes": [

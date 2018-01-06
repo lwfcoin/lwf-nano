@@ -15,7 +15,7 @@ module.exports = {
   customNode: { // network name translation t('Custom Node');
     name: 'Custom Node',
     custom: true,
-    address: 'http://localhost:4000',
+    address: 'http://localhost:10000',
     code: 2,
   },
 };

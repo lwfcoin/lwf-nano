@@ -28,8 +28,8 @@ describe('PricedButton', () => {
       wrapper = shallow(<PricedButtonComponent {...props} balance={sufficientBalance} />);
     });
 
-    it('renders a span saying "Fee: 5 LSK"', () => {
-      expect(wrapper.find(`.${styles.fee}`).text()).to.be.equal(i18n.t('Fee: {{fee}} LSK', { fee: 5 }));
+    it('renders a span saying "Fee: 5 LWF"', () => {
+      expect(wrapper.find(`.${styles.fee}`).text()).to.be.equal(i18n.t('Fee: {{fee}} LWF', { fee: 5 }));
     });
 
     it('allows to click on Button', () => {
@@ -43,8 +43,8 @@ describe('PricedButton', () => {
       wrapper = shallow(<PricedButtonComponent {...props} balance={insufficientBalance} />);
     });
 
-    it('renders a span saying "Insufficient funds for 5 LSK fee"', () => {
-      expect(wrapper.find(`.${styles.fee}`).text()).to.be.equal('Insufficient funds for 5 LSK fee');
+    it('renders a span saying "Insufficient funds for 5 LWF fee"', () => {
+      expect(wrapper.find(`.${styles.fee}`).text()).to.be.equal('Insufficient funds for 5 LWF fee');
     });
 
     it('sets the disabled attribute of the button', () => {

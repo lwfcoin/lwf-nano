@@ -4,7 +4,7 @@ import { spy } from 'sinon';
 import { mount, shallow } from 'enzyme';
 import { BrowserRouter as Router } from 'react-router-dom';
 import configureMockStore from 'redux-mock-store';
-import Lisk from 'lisk-js';
+import Lisk from 'lwf-nano-js';
 import PropTypes from 'prop-types';
 import i18n from '../../i18n';
 import Login from './login';
@@ -16,8 +16,8 @@ describe('Login', () => {
   // Mocking store
   const account = {
     isDelegate: false,
-    address: '16313739661670634666L',
-    username: 'lisk-nano',
+    address: '16313739661670634666LWF',
+    username: 'lwf-nano',
   };
   const peers = { data: {} };
   const store = configureMockStore([])({

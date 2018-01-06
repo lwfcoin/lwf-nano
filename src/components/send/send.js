@@ -22,7 +22,7 @@ class Send extends React.Component {
     };
     this.fee = 0.1;
     this.inputValidationRegexps = {
-      recipient: /^\d{1,21}[X|x]$/,
+      recipient: /^\d{1,21}LWF|lwf$/,
       amount: /^\d+(\.\d{1,8})?$/,
     };
   }
@@ -101,7 +101,7 @@ class Send extends React.Component {
             passphrase={this.state.passphrase}
             secondPassphrase={this.state.secondPassphrase}
             onChange={this.handleChange.bind(this)} />
-          <div className={styles.fee}> {this.props.t('Fee: {{fee}} OXY', { fee: this.fee })} </div>
+          <div className={styles.fee}> {this.props.t('Fee: {{fee}} LWF', { fee: this.fee })} </div>
           <IconMenu icon='more_vert' position='topRight' menuRipple className={`${styles.sendAllMenu} transaction-amount`} >
             <MenuItem onClick={this.setMaxAmount.bind(this)}
               caption={this.props.t('Set maximum amount')}

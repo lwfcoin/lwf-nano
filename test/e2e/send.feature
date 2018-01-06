@@ -6,7 +6,7 @@ Feature: Send dialog
     And I fill in "1" to "amount" field
     And I fill in "537318935439898807X" to "recipient" field
     And I click "submit button"
-    Then I should see alert dialog with title "Success" and text "Your transaction of 1 OXY to 537318935439898807X was accepted and will be processed in a few seconds."
+    Then I should see alert dialog with title "Success" and text "Your transaction of 1 LWF to 537318935439898807X was accepted and will be processed in a few seconds."
 
   @integration
   Scenario: should not allow to send when not enough funds
@@ -31,4 +31,4 @@ Feature: Send dialog
     And I fill in "537318935439898807X" to "recipient" field
     And I fill in second passphrase of "second passphrase account" to "second passphrase" field
     And I click "submit button"
-    Then I should see alert dialog with title "Success" and text "Your transaction of 1 OXY to 537318935439898807X was accepted and will be processed in a few seconds."
+    Then I should see alert dialog with title "Success" and text "Your transaction of 1 LWF to 537318935439898807X was accepted and will be processed in a few seconds."

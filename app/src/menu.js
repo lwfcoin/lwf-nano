@@ -17,15 +17,15 @@ const addAboutMenuForMac = ({ template, name }) => {
 };
 
 const addAboutMenuForNonMac = ({ template, electron }) => {
-  const copyright = `Copyright © 2017 - ${new Date().getFullYear()} Oxycoin`;
+  const copyright = `Copyright © 2017 - ${new Date().getFullYear()} LWF Logistics S.a.r.l-s`;
   template[template.length - 1].submenu.push({
     label: i18n.t('About'),
     click(item, focusedWindow) {
       if (focusedWindow) {
         const options = {
           buttons: ['OK'],
-          icon: `${__dirname}/assets/images/oxy.png`,
-          message: `${i18n.t('Oxy Nano')}\n${i18n.t('Version')} ${electron.app.getVersion()}\n${copyright}`,
+          icon: `${__dirname}/assets/images/LWF.png`,
+          message: `${i18n.t('LWF Nano')}\n${i18n.t('Version')} ${electron.app.getVersion()}\n${copyright}`,
         };
         electron.dialog.showMessageBox(focusedWindow, options, () => {});
       }
@@ -116,31 +116,31 @@ const menu = {
         label: i18n.t('Help'),
         submenu: [
           {
-            label: i18n.t('Oxycoin Website'),
-            click: menu.onClickLink.bind(null, electron, 'https://oxycoin.io'),
+            label: i18n.t('LWF Website'),
+            click: menu.onClickLink.bind(null, electron, 'https://lwf.io'),
           },
           {
-            label: i18n.t('Oxycoin Chat'),
-            click: menu.onClickLink.bind(null, electron, 'https://oxycoin.slack.com'),
+            label: i18n.t('LWF Chat'),
+            click: menu.onClickLink.bind(null, electron, 'https://lwfcoin.slack.com'),
           },
           {
-            label: i18n.t('Oxycoin Explorer'),
-            click: menu.onClickLink.bind(null, electron, 'https://explorer.oxycoin.io'),
+            label: i18n.t('LWF Explorer'),
+            click: menu.onClickLink.bind(null, electron, 'https://explorer.lwf.io'),
           },
           {
-            label: i18n.t('Oxycoin Forum'),
-            click: menu.onClickLink.bind(null, electron, 'https://oxycoin.proboards.com'),
+            label: i18n.t('LWF Forum'),
+            click: menu.onClickLink.bind(null, electron, 'https://lwfcoin.slack.com'),
           },
           {
             type: 'separator',
           },
           {
             label: i18n.t('Report Issue...'),
-            click: menu.onClickLink.bind(null, electron, 'https://oxycoin.io/contact.php'),
+            click: menu.onClickLink.bind(null, electron, 'https://github.com/lwfcoin/lwf-nano/issues'),
           },
           {
             label: i18n.t('What\'s New...'),
-            click: menu.onClickLink.bind(null, electron, 'https://github.com/oxycoin/oxy-nano/releases'),
+            click: menu.onClickLink.bind(null, electron, 'https://github.com/lwfcoin/lwf-nano/releases'),
           },
         ],
       },

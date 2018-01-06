@@ -32,9 +32,9 @@ def fail(reason) {
 
 /* comment out the next line to allow concurrent builds on the same branch */
 properties([disableConcurrentBuilds(), pipelineTriggers([])])
-node('oxy-nano') {
+node('lwf-nano') {
   try {
-    stage ('Checkout and Start Oxycoin Core') {
+    stage ('Checkout and Start LWF Core') {
       try {
         deleteDir()
         checkout scm
@@ -68,7 +68,7 @@ node('oxy-nano') {
         '''
       } catch (err) {
         echo "Error: ${err}"
-        fail('Stopping build: Oxycoin Core failed to start')
+        fail('Stopping build: LWF Core failed to start')
       }
     }
 
@@ -136,7 +136,7 @@ node('oxy-nano') {
     stage ('Run E2E Tests') {
       try {
         ansiColor('xterm') {
-          withCredentials([string(credentialsId: 'oxy-nano-testnet-passphrase', variable: 'TESTNET_PASSPHRASE')]) {
+          withCredentials([string(credentialsId: 'lwf-nano-testnet-passphrase', variable: 'TESTNET_PASSPHRASE')]) {
             sh '''
             N=${EXECUTOR_NUMBER:-0}; N=$((N+1))
 

@@ -12,14 +12,14 @@ describe('MenuBuilder', () => {
         setApplicationMenu: spy(),
         buildFromTemplate: template => (template),
       },
-      app: { getName: () => ('Oxy Nano'), getVersion: () => ('some version') },
+      app: { getName: () => ('LWF Nano'), getVersion: () => ('some version') },
     };
   });
 
   it('Builds the electron about menu when os is mac', () => {
     process.platform = 'darwin';
     const template = menu.build(electron);
-    expect(template[0].label).to.equal('Oxy Nano');
+    expect(template[0].label).to.equal('LWF Nano');
     expect(template[0].submenu[0].role).to.equal('about');
     expect(template[0].submenu[0].label).to.equal('About');
     expect(template[0].submenu[1].role).to.equal('quit');
@@ -37,11 +37,11 @@ describe('MenuBuilder', () => {
     expect(submenu[submenu.length - 1].label).to.equal('About');
 
     // make sure the mac about menu was not added
-    expect(template[0].label).to.not.equal('Oxy Nano');
+    expect(template[0].label).to.not.equal('LWF Nano');
   });
 
   it('Should open link on click', () => {
-    menu.onClickLink(electron, 'https://oxycoin.io');
-    expect(electron.shell.openExternal).to.have.been.calledWith('https://oxycoin.io');
+    menu.onClickLink(electron, 'https://lwf.io');
+    expect(electron.shell.openExternal).to.have.been.calledWith('https://lwf.io');
   });
 });

@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import Lisk from 'oxy-nano-js';
+import Lisk from 'lwf-nano-js';
 import actionTypes from '../constants/actions';
 import { getNethash } from './../utils/api/nethash';
 import { errorToastDisplayed } from './toaster';

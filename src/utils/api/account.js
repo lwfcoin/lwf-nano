@@ -1,4 +1,4 @@
-import Lisk from 'oxy-nano-js';
+import Lisk from 'lwf-nano-js';
 import { requestToActivePeer } from './peers';
 
 export const getAccount = (activePeer, address) =>

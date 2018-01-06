@@ -107,7 +107,7 @@ class Voting extends React.Component {
               <TableCell>{this.props.t('Vote', { context: 'verb' })}</TableCell>
               <TableCell>{this.props.t('Rank')}</TableCell>
               <TableCell>{this.props.t('Name')}</TableCell>
-              <TableCell>{this.props.t('Oxycoin Address')}</TableCell>
+              <TableCell>{this.props.t('LWF Address')}</TableCell>
               <TableCell>{this.props.t('Uptime')}</TableCell>
               <TableCell>{this.props.t('Approval')}</TableCell>
             </TableHead>

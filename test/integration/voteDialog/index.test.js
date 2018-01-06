@@ -41,15 +41,13 @@ const realAccount = {
 
 const peers = {
   defaultPeers: [
-    'corenode1.oxycoin.io',
-    'corenode2.oxycoin.io',
+    'wallet.lwf.io'
   ],
   defaultSSLPeers: [
-    'corenode1.oxycoin.io',
-    'corenode2.oxycoin.io',
+    'wallet.lwf.io'
   ],
   defaultTestnetPeers: [
-    'testnode1.oxycoin.io',
+    'twallet.lwf.io',
   ],
   options: {
     name: 'Testnet',
@@ -62,7 +60,7 @@ const peers = {
   randomPeer: true,
   testnet: true,
   bannedPeers: [],
-  currentPeer: 'testnode1.oxycoin.io',
+  currentPeer: 'wallet.lwf.io',
   port: 9999,
   nethash: {
     'Content-Type': 'application/json',

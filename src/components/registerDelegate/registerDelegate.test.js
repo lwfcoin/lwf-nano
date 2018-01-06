@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
-import Lisk from 'oxy-nano-js';
+import Lisk from 'lwf-nano-js';
 import { Provider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../../i18n'; // initialized i18next instance
@@ -14,26 +14,26 @@ import * as delegateApi from '../../utils/api/delegate';
 const normalAccount = {
   passphrase: 'pass',
   isDelegate: false,
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
 };
 
 const delegateAccount = {
   passphrase: 'pass',
   isDelegate: true,
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
   delegate: {
-    username: 'oxy-nano',
+    username: 'lwf-nano',
   },
 };
 
 const withSecondSecretAccount = {
   passphrase: 'pass',
-  address: '16313739661670634666X',
+  address: '16313739661670634666LWF',
   balance: 1000e8,
   delegate: {
-    username: 'oxy-nano',
+    username: 'lwf-nano',
   },
   secondSignature: 1,
 };

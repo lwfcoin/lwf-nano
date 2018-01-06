@@ -129,14 +129,14 @@ const menu = {
           },
           {
             label: i18n.t('LWF Forum'),
-            click: menu.onClickLink.bind(null, electron, 'https://lwf.proboards.com'),
+            click: menu.onClickLink.bind(null, electron, 'https://lwfcoin.slack.com'),
           },
           {
             type: 'separator',
           },
           {
             label: i18n.t('Report Issue...'),
-            click: menu.onClickLink.bind(null, electron, 'https://lwf.io/contact.php'),
+            click: menu.onClickLink.bind(null, electron, 'https://github.com/lwfcoin/lwf-nano/issues'),
           },
           {
             label: i18n.t('What\'s New...'),
